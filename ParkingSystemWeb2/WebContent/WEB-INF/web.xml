@@ -10,11 +10,11 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <listener>  
-  	<listener-class>ParkingLotListener</listener-class>  
+  	<listener-class>parking.lot.ParkingLotListener</listener-class>  
   </listener> 
   <servlet>
     <servlet-name>options</servlet-name>
-    <servlet-class>Options</servlet-class>
+    <servlet-class>parking.servlet.Options</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>options</servlet-name>
@@ -22,7 +22,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>slot</servlet-name>
-    <servlet-class>SlotServlet</servlet-class>
+    <servlet-class>parking.servlet.SlotServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>slot</servlet-name>
@@ -30,7 +30,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>ticket</servlet-name>
-    <servlet-class>TicketServlet</servlet-class>
+    <servlet-class>parking.servlet.TicketServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ticket</servlet-name>
@@ -38,7 +38,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>revoke</servlet-name>
-    <servlet-class>RevokeServlet</servlet-class>
+    <servlet-class>parking.servlet.RevokeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>revoke</servlet-name>
