@@ -65,7 +65,9 @@ public class SlotServlet extends HttpServlet {
 		Slot slot = AllocateController.getEmptySlot( pl, v, p);
 		if(slot == null){
 			System.out.println("\nParking Slot not available!!!");
-			return;
+			getServletContext().setAttribute("message","No Slots Available! Sorry for the inconvenience.");
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+			
 		}
 		System.out.println("Slot allocated: " + slot);
 		getServletContext().setAttribute("slot", slot);

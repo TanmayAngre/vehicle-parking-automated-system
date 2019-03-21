@@ -19,13 +19,16 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
+.page-header{
+	border-bottom: 1px solid #428bca;
+}
 </style>
 </head>
 <body>
 <div class="container">
 <h2 class="page-header text-info">Vehicle Parking System</h2>
 <br>
-<center><h5><% String res = (String)getServletContext().getAttribute("message"); if(res==null){out.print("");} else{out.print(res);} %></h5></center>
+<center><b><% String res = (String)getServletContext().getAttribute("message"); if(res==null){out.print("");} else{out.print(res);} %></b></center>
 <center><h4>Select an option to park or unpark your vehicle...</h4></center>
 <br><br>
 <form action="selectOption">

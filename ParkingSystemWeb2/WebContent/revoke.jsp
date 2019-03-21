@@ -33,6 +33,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
+.page-header{
+	border-bottom: 1px solid #428bca;
+}
 </style>
 </head>
 <body>

@@ -36,11 +36,35 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
+.page-header{
+	border-bottom: 1px solid #428bca;
+}
 </style>
 </head>
 <body>
 <div class="container">
 <h2 class="page-header text-info">After slot creation</h2>
+<div class="row">
+<div class="col-sm-offset-3 col-sm-6">
+<div class="page-header"><b>Entered Vehicle Details</b></div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-offset-3 col-sm-6">
+<div>Model Name: <div class="text-info"><b><%= request.getParameter("name") %></b></div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-offset-3 col-sm-6">
+<div>Type: <div class="text-info"><b><%= request.getParameter("type") %></b></div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-offset-3 col-sm-6">
+<div>Reg No: <div class="text-info"><b><%= request.getParameter("regno") %></b></div></div>
+</div>
+</div>
+<br>
 <div class="row">
 <form name="serviceform" class="col-sm-offset-3 col-sm-6" action="ticketservlet" method="post" onsubmit="return validdd()">
 	<div class="form-group">
